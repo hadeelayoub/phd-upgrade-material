@@ -1,0 +1,41 @@
+\chapter{Introduction}
+
+Sign language is one of the earliest documented methods of communication between primitive hominids. Before the development of the highly structured languages we have today, we used hand gestures, facial expressions and body language to express ourselves\footcite{Premaratne2010}. Today, the majority of those using sign language for daily communication are either diagnosed with a disability or have a family member who has been. More recently, partly as a result of better diagnosis of a wide range of Autism Spectrum Disorders, children with non-verbal or non-vocal autism use a form of sign language to communicate\footcite{bonvillian1981sign}.
+
+As technology development is accelerating, new fields of Assistive Technology have emerged. Such technology is directed towards developing innovations to help people with disabilities live better lives and integrate more easily into their communities. As a result, healthcare technology innovations are receiving a great deal of attention from the medical field and research is being pursued in healthcare innovations relating to assistive technology.
+
+One of the goals of this research project is to help speech-disabled people interact with technology and use it to communicate in public with those who do not understand sign language. My research focuses on exploring new methods to make this technology more accessible and universal by adding translation features and by more easily allowing customisation for different sign language types such as American Sign Language (ASL) and Makaton Sign Language\footcite{Makaton}. 
+
+Hand gesture recognition is perhaps the most significant application of human computer interaction (HCI) research that contributes to innovating technology for sign language users. In such investigations, patterns emerging from hand movement and orientation are classified using sign language segmentation\footcite{Han2009}. This can be done using two approaches:
+
+\begin{enumerate}
+    \item{Vision-based systems}
+    \item{Data Glove-based systems}
+\end{enumerate}
+
+A Vision-based system is a gesture recognition system that is based on computer vision. Such systems employ the usage of cameras (either individually or in multi-camera systems\footcite{Vogler1998}) to detect the motion of the signer's hands and to translate those motions into segmented gestures. Alternatively, a Data Glove-based system, uses a ``glove'' that is fitted with an array of gyroscopic sensors (that measure rotation), flex sensors (that measure the bending of the fingers) and accelerometers (that measure the forces acting on the hand due to its own acceleration). The data is streamed from these sensors in real-time and processed by a computer or micro-controller (a small processing chip). This processing engine interprets the motions of the hand into sign-language gestures. After the gestures have been interpreted, using either system, the meanings of each can be ``looked up'' and their spoken translations can be played from a speaker.
+
+Vision based systems often have low accuracy and require complex programming to isolate the hands from the image backgrounds, making them hard to use in non-controlled environment and almost impossible to use for daily communication or as mobile, wearable devices. Some studies have attempted to improve the output of vision-based systems by adding multiple cameras\footcite{Vogler1998} or using coloured gloves\footcite{Starner1998}.
+
+In contrast, data glove based systems have proven to be more reliable in registering and relaying hand gestures. Data gloves use sensors that can more reliably detect finger flexing, hand movement, and orientation\footcite{AnethaK2014}. They can also be simpler than vision based systems. However, such systems are still not robust enough. To quote \citeauthor{Premaratne2010}, ``Even with advancements in computer vision, glove based sign language recognition offers the widest vocabulary and the best possible recognition accuracy. However, no recent such system has been reported with very high accuracy''. This is possibly because researchers currently seem to be more focused on vision based systems.
+
+There are many versions of the Data Glove that translate sign language to text or speech. Most of these gloves rely on a smart device for output and it seems that none have yet moved beyond prototyping. There is almost no published work showing evidence of sign language data gloves being tested by speech-disabled participants for daily communication. This may be due to the low accuracy, complexity and the high cost of the electronic hardware currently required.
+
+\begin{quote}\textbf{
+    \large Research Questions:
+    \small
+    \begin{itemize}
+        \item{RQ1: How can an assistive technology innovation be made to facilitate communication for people with disabilities who use sign language for their daily communication?}
+        \item{RQ2: How can this innovation be made universal and compatible with different libraries of sign language?}
+        \item{RQ3: How can this innovation be made more accessible and more affordable so that it can be more easily available as a commercial product?}
+    \end{itemize}
+}\end{quote}
+
+
+In this research, I explore the possibility of making a robust, stand-alone Data Glove to translate sign language hand gestures to text and speech. The glove would have sensors to monitor the flexing of fingers and to calculate hand orientation in order to more accurately classify complex hand gestures. 
+
+Previous research has shown that many systems have failed because of the vast range of sign language vocabulary they had been manually programmed to process\footcite{DipietroL.SabatiniA.M.Dario2008}. I propose programming a limited vocabulary of signs and rely primarily on machine learning-driven software to train the glove for new words.
+
+The plan to limit vocabulary and simplify recognition is a novel attempt to reduce the size and number of components required for the hardware and reduce the complexity of the minimum required software to use the system, in order to make the data glove simpler to run, easier to wear and cheaper to produce.
+
+Machine learning techniques can be used to allow users to train the glove and upload their own sign language dialects. More features will be added, such as translation and wireless smart-phone communication to make the glove more usable in external environments and more easily integrated into daily technology contexts, in the same way as conventional phones or tablets.

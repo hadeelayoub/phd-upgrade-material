@@ -1,0 +1,29 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\usepackage[backend=biber, style=verbose]{biblatex}
+
+\onehalfspacing
+
+\addbibresource{references.bib}
+
+\begin{document}
+% Title Page
+\author{Hadeel D. Ayoub}
+\title{
+    Sensor-Based Hand Gesture Recognition in Human-Computer Interaction: Sign Language Applications and Speech Synthesis}
+\date{November 2017}
+
+\maketitle
+
+% Contents
+\tableofcontents
+
+\include{./TeX_files/part01/part01}
+
+\printbibliography
+
+\end{document}\textsl{}
