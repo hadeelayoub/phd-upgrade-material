@@ -49,7 +49,40 @@ Referring to multiple resources on research methods in HCI\footcite{Cox2008} \fo
 In principle, interaction design research is ``learning by doing'': researchers identify a problem, design a solution, test and evaluate their proposal, and if not satisfied, try again using the feedback they gained from the research cycle.  While this is the essence of the approach, there are other key attributes of interaction design research that differentiate it from other problem-solving research methods. One being its emphasis is on scientific study. In interaction design research, the problem is studied systematically, and intervention is informed by theoretical considerations, which in my case will be the outcome of grounded theory research.  In Interaction design research, data is presented on an ongoing basis. All the while, the methodological tools are being refined to suit the demands of the research\footcite{OBrienRoryFacultyofInformationStudies2001}. 
  
 Another reason that I chose Interaction design research, is because it is a user-cantered research methodology. Interaction design research focuses on turning the people involved in the studies and testing into researchers, too. ``People learn best, and more willingly apply what they have learned, when they do it themselves.  It also has a social dimension - the research takes place in real-world situations, and aims to solve real problems''\footcite{OBrienRoryFacultyofInformationStudies2001}. This is the exact setting for my research studies, where real participants will test and use the data glove, sometimes over a long period of time and mostly in their own environments.
-The interaction design process\footcite{Dix2004} of the research will be divided into four main phases plus an iteration loop (feeds evaluations back into the deign), focused on the design of interaction, illustrated in figure 1.
+The interaction design process\footcite{Dix2004} of the research will be divided into four main phases plus an iteration loop (feeds evaluations back into the deign), focused on the design of interaction, illustrated in Figure \ref{fig:idpdiagram}.
+
+\begin{figure} 
+    \centering
+    \begin{tikzpicture}[node distance=1em, >=stealth', bend angle=45, auto, every node/.style={scale=0.7}]
+    
+        \tikzstyle{place}=[rectangle, rounded corners, thick, draw=blue!22, fill=blue!20, minimum width=5em]
+        
+        \tikzstyle{every label}=[red]
+        
+        \begin{scope}
+            \node [place] (id)								{Identify a Problem};
+            \node [place] (an) [right=of id]               	{Analysis};
+            \node [place] (de) [right=of an, yshift=3em]	{Design a Solution};
+            \node [place] (pr) [below=of de, yshift=-3em]   	{Prototype};
+            \node [place] (ev) [right=of de, yshift=-3em]           		{Test \& Evaluate};
+            \node [place] (im) [right=of ev]               	{Implement \& Deploy};
+            
+            \path (id) edge[->] (an);
+            \path (an) edge[->, bend left=20] (de);
+            \path (de) edge[->, bend left=20] (ev);
+            \path (ev) edge[->, bend left=20] (pr);
+            \path (pr) edge[->, bend left=20] (an);
+            \path (ev) edge[->] (im);
+        \end{scope}
+
+        \begin{pgfonlayer}{background}
+            \filldraw [line width=4mm,join=round,black!10]
+            (de.north  -| id.west) rectangle (pr.south  -| im.east);
+        \end{pgfonlayer}
+    \end{tikzpicture}
+    \caption{Iterative Design Process; based on Figure 4.1 of Dix et al., 2004}
+    \label{fig:idpdiagram}
+\end{figure}
 
 \begin{quote}
 \textbf{Requirements:} The first stage is establishing what exactly is needed. As a pioneering study in this field it is necessary to find out what is currently happening. For example, how do speech disabled individuals currently interact in public using sign language? How does the process of communication work? 

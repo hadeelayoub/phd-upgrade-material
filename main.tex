@@ -4,7 +4,15 @@
 \usepackage{filecontents}
 \usepackage{setspace}
 \usepackage{etoolbox}
+\usepackage{tikz}
+\usepackage[labelfont=bf]{caption}
 \usepackage[backend=biber, style=verbose]{biblatex}
+
+\protected\def\tikz@signal@path{\tikz@signal@path}
+
+\usetikzlibrary{arrows, shapes, snakes, automata, backgrounds, petri, positioning}
+
+
 
 \onehalfspacing
 
