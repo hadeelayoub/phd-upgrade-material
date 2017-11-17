@@ -6,3 +6,7 @@
 *-blx.bib
 *.toc
 *.aux
+*.pdf
+*.synctex.gz
+*.DS_Store
+.DS_Store
