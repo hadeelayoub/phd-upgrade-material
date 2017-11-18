@@ -5,10 +5,11 @@
 \usepackage{setspace}
 \usepackage{etoolbox}
 \usepackage{tikz}
+\usepackage[parfill]{parskip}
 \usepackage{array}
 \usepackage[labelfont=bf]{caption}
 \usepackage[labelfont=bf]{subcaption}
-\usepackage[backend=biber, style=verbose-ibid]{biblatex}
+\usepackage[backend=biber, style=verbose-note]{biblatex}
 
 \protected\def\tikz@signal@path{\tikz@signal@path}
 
@@ -23,9 +24,9 @@
 
 \begin{document}
 % Title Page
-\author{Hadeel D. Ayoub}
+\author{Hadeel D. Ayoub \vspace{.4cm} \\ \small Goldsmiths, University of London \\ \small Department of Computing}
 \title{
-    Sensor-Based Hand Gesture Recognition in Human-Computer Interaction: Sign Language Applications}
+    Sensor-Based Hand Gesture Recognition in Human-Computer Interaction: \\ Sign Language Applications \\ \vspace{.5cm} \large PhD Upgrade Review}
 \date{November 2017}
 
 \maketitle
@@ -35,6 +36,8 @@
 
 \include{./TeX_files/part01/part01}
 
-\printbibliography
+\nocite{*}
+
+\printbibliography[heading=bibintoc]
 
 \end{document}\textsl{}
