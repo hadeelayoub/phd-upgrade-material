@@ -5,15 +5,17 @@
 \usepackage{setspace}
 \usepackage{etoolbox}
 \usepackage{tikz}
+\usepackage{array}
 \usepackage[labelfont=bf]{caption}
 \usepackage[labelfont=bf]{subcaption}
-\usepackage[backend=biber, style=verbose]{biblatex}
+\usepackage[backend=biber, style=verbose-ibid]{biblatex}
 
 \protected\def\tikz@signal@path{\tikz@signal@path}
 
 \usetikzlibrary{arrows, shapes, snakes, automata, backgrounds, petri, positioning}
 
-
+\newlength\figureheight 
+\newlength\figurewidth 
 
 \onehalfspacing
 

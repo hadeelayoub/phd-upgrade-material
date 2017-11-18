@@ -65,20 +65,24 @@ A dialogue has been drafted between the therapist and the participant for two si
 \subsection{Task I - Participant A - Playtime Dialogue}
 
 \begin{figure}
-  \begin{subfigure}
     \centering
-    \includegraphics[width=0.5\textwidth]{./assets/img/Dance}
-    \caption{Dance}
-    \label{fig:dance}
-  \end{subfigure}
-  \begin{subfigure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{./assets/img/Play}
-    \caption{Dance}
-    \label{fig:play}
-  \end{subfigure}
-  \caption{Examples of a test subject making hand gestures while wearing the Data Glove}
-  \label{fig:examplegestures}
+    \begin{subfigure}{.4\linewidth}
+        \centering
+        \setlength\figureheight{\linewidth}
+        \setlength\figurewidth{\linewidth}
+        \includegraphics{./assets/img/Dance}
+        \caption{Dance}
+        \label{fig:dance}
+    \end{subfigure}
+    \hspace{1cm}
+    \begin{subfigure}{.4\linewidth}
+        \centering
+        \includegraphics{./assets/img/Play}
+        \caption{Dance}
+        \label{fig:play}
+    \end{subfigure}
+    \caption{Examples of a test subject making hand gestures while wearing the Data Glove}
+    \label{fig:examplegestures}
 \end{figure}
 
 \textbf{Data glove pre-programmed Makaton sign language vocabulary:}
@@ -111,21 +115,28 @@ A dialogue has been drafted between the therapist and the participant for two si
 \subsection{Task II - Participant B - Restaurant Dialogue}
 
 \begin{figure}
-    \begin{subfigure}
+    \centering
+    \begin{subfigure}{.4\linewidth}
         \centering
-        \includegraphics[width=0.5\textwidth]{./assets/img/Eat}
+        \setlength\figureheight{\linewidth}
+        \setlength\figurewidth{\linewidth}
+        \includegraphics{./assets/img/Eat}
         \caption{Eat}
         \label{fig:eat}
     \end{subfigure}
-    \begin{subfigure}
+    \begin{subfigure}{.4\linewidth}
         \centering
-        \includegraphics[width=0.5\textwidth]{./assets/img/Hungry}
+        \setlength\figureheight{\linewidth}
+        \setlength\figurewidth{\linewidth}
+        \includegraphics{./assets/img/Hungry}
         \caption{Hungry}
         \label{fig:hungry}
     \end{subfigure}
     \caption{Examples of a test subject making hand gestures while wearing the Data Glove}
     \label{fig:examplegestures2}
 \end{figure}
+
+
 
 \textbf{Data glove pre-programmed Makaton sign language vocabulary:}
 
@@ -163,7 +174,7 @@ The researcher's observation was that participants wanted to use the glove for o
 
 \subsection{Results}
 
-The testing demonstrates that the system is capable of translating sign language to text and speech with an accuracy rate of 80-85\% and about 15\% of attempts resulting in no words being spoken due to failure to detect the gesture. Reasons for failed attempts is due to the fact that signs vary in time and speed, even with the same user, where slight changes of speed and position of hands occur\footcite{Premaratne2010}. Also, the similarity between some signs sometimes makes it difficult to distinguish them. The fact that the users were playing and signing at the same time while wearing the glove added to this confusion. 
+The testing demonstrates that the system is capable of translating sign language to text and speech with an accuracy rate of 80-85\%\footnote{Testing video URL: https://youtu.be/imf5JiCfGrc} and about 15\% of attempts resulting in no words being spoken due to failure to detect the gesture. Reasons for failed attempts is due to the fact that signs vary in time and speed, even with the same user, where slight changes of speed and position of hands occur\footcite{Premaratne2010}. Also, the similarity between some signs sometimes makes it difficult to distinguish them. The fact that the users were playing and signing at the same time while wearing the glove added to this confusion. 
 
 Another factor that affected the results was that participant B had lower motor abilities and therefore was not able to bend his fingers all the way. This threw the glove off recognition ranges for some gestures.
 

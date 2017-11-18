@@ -32,7 +32,38 @@ It is documented in previous HCI research\footcite{Cox2008}\footcite{Lazar2010} 
 
 HCI researchers\footcite{Cox2008}\footcite{Lazar2010} have strongly recommended that user testing begin as early in the development cycle as possible, so that improvements can be made before design processes and coding become complex. For this to become feasible, it is advised to keep the system development flexible and easily modified to be able to conduct continuous user-testing. This is known as ``rapid prototyping, and consists of first developing a system specifically designed to be easily modifiable''\footcite{Wania2006}. This is done through segmenting performance and postponing the launch of the full system to a later stage in the study\footcite{Dix2004}\footcite{Georges2004}.
 
-An exemplary case study and rational account of the iterative testing and rapid prototyping approach is given in an article by Good et al.\footcite{Cox2008} in which they describe the process as ``User derived interface design.'' 
+An exemplary case study and rational account of the iterative testing and rapid prototyping approach is given in an article by Good et al.\footcite{Cox2008} in which they describe the process as ``User derived interface design.''
+
+\begin{figure} 
+    \centering
+    \begin{tikzpicture}[node distance=1em, >=stealth', bend angle=45, auto, every node/.style={scale=0.7}]
+    
+    \tikzstyle{place}=[rectangle, rounded corners, thick, draw=blue!22, fill=blue!20, minimum width=5em]
+    
+    \tikzstyle{every label}=[red]
+    
+    \begin{scope}
+    \node [place] (id)								{Identify a Problem};
+    \node [place] (an) [right=of id]               	{Analysis};
+    \node [place] (pr) [below=of de, yshift=-3em]   	{Prototype};
+    \node [place] (ev) [right=of de, yshift=-3em]           		{Test \& Evaluate};
+    \node [place] (im) [right=of ev]               	{Implement \& Deploy};
+    
+    \path (id) edge[->] (an);
+    \path (an) edge[->, bend left=40] (ev);
+    \path (ev) edge[->, bend left=20] (pr);
+    \path (pr) edge[->, bend left=20] (an);
+    \path (ev) edge[->] (im);
+    \end{scope}
+    
+    \begin{pgfonlayer}{background}
+    \filldraw [line width=4mm,join=round,black!10]
+    (de.north  -| id.west) rectangle (pr.south  -| im.east);
+    \end{pgfonlayer}
+    \end{tikzpicture}
+    \caption{Iterative Prototyping; based on Figure 4.2 of Dix et al., 2004}
+    \label{fig:idpdiagram2}
+\end{figure}
 
 In this way, a series of prototypes of the data glove will be designed and a chapter will be dedicated to prototyping: design and programming, following the same structure illustrated in figure 2. First prototype will be a proof of concept, to prove that the system works with minimal hardware and software. Testing will be conducted and feedback will be fed back into the design loop of the next prototype. The consequent prototypes’ features will be upgraded gradually based on usability testing, always considering the four main elements of this research: affordable, accessible, universal and most importantly effective in facilitating daily communication between speech disabled individuals and the public. 
 
